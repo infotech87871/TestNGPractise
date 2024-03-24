@@ -22,8 +22,9 @@ public class TestNg01FbPriotParam extends BaseClassForMethodCreation {
 		WebElement email = driver.findElement(By.xpath("//input[@name='email']"));
 		sendKeys(email, email1);
 	}
-	@Parameters({"password"})
-	public static void enterPass(String pass1) {
+	@Parameters({"pasword"})
+	@Test(priority = -3)
+	public static void enterPass(@Optional("12345jf")String pass1) {
 		WebElement pass = driver.findElement(By.cssSelector("input[type='password']"));
 		sendKeys(pass, pass1);
 	}
@@ -37,7 +38,8 @@ public class TestNg01FbPriotParam extends BaseClassForMethodCreation {
 		WebElement btnClick = driver.findElement(By.cssSelector("button[class='_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy']"));
 		buttonClick(btnClick);
 	}
-	@Test(priority = 0)public static void closeTheBrowser() {
+	@Test(priority = 0)
+	public static void closeTheBrowser() {
 		closeBrowser();
 	}
 }

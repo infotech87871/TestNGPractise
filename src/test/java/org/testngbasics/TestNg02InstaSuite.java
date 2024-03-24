@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.frameworkbaseclass.BaseClassForMethodCreation;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -18,7 +19,7 @@ public class TestNg02InstaSuite extends BaseClassForMethodCreation {
 			{ "arun1234@gmail.com", "sziue7645" },
 			{ "balaji2764657@gmail.com ", "876d" } };
 	}
- 
+
 	@Test(priority = 1)
 	public static void launchingBrowser() {
 		edgeBrowser();

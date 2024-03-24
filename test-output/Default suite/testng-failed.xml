@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.testngbasics.DemoRunParallel">
+      <class name="org.testngbasics.TestNg01FbPriotParam">
         <methods>
-          <include name="ie"/>
+          <include name="enterPass"/>
         </methods>
-      </class> <!-- org.testngbasics.DemoRunParallel -->
+      </class> <!-- org.testngbasics.TestNg01FbPriotParam -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
