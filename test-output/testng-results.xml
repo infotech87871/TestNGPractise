@@ -1,36 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="7" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-24T14:32:02 IST" name="Suite" finished-at="2024-03-24T14:32:15 IST" duration-ms="12768">
+  <suite started-at="2024-03-24T15:01:58 IST" name="Suite" finished-at="2024-03-24T15:02:16 IST" duration-ms="18195">
     <groups>
     </groups>
-    <test started-at="2024-03-24T14:32:02 IST" name="Ch Test" finished-at="2024-03-24T14:32:05 IST" duration-ms="3509">
-      <class name="org.testngbasics.TestNg05CrossParallel">
-        <test-method signature="browserLaunch(java.lang.String)[pri:0, instance:org.testngbasics.TestNg05CrossParallel@76494737]" started-at="2024-03-24T14:32:02 IST" name="browserLaunch" finished-at="2024-03-24T14:32:05 IST" duration-ms="3421" status="FAIL">
+    <test started-at="2024-03-24T15:01:58 IST" name="Test" finished-at="2024-03-24T15:02:16 IST" duration-ms="18195">
+      <class name="org.testngbasics.TestNg01FbPriotParam">
+        <test-method signature="lauchingBrowser()[pri:-5, instance:org.testngbasics.TestNg01FbPriotParam@15043a2f]" started-at="2024-03-24T15:01:58 IST" name="lauchingBrowser" finished-at="2024-03-24T15:02:08 IST" duration-ms="9950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lauchingBrowser -->
+        <test-method signature="enterUsername(java.lang.String)[pri:-4, instance:org.testngbasics.TestNg01FbPriotParam@15043a2f]" started-at="2024-03-24T15:02:08 IST" name="enterUsername" finished-at="2024-03-24T15:02:08 IST" duration-ms="263" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[asasakbarsha7676@gmail.com]]>
               </value>
             </param>
           </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUsername -->
+        <test-method signature="enterPass(java.lang.String)[pri:-3, instance:org.testngbasics.TestNg01FbPriotParam@15043a2f]" started-at="2024-03-24T15:02:08 IST" name="enterPass" finished-at="2024-03-24T15:02:08 IST" duration-ms="85" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12345jf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPass -->
+        <test-method signature="clickLoginBtn()[pri:-1, instance:org.testngbasics.TestNg01FbPriotParam@15043a2f]" started-at="2024-03-24T15:02:08 IST" name="clickLoginBtn" finished-at="2024-03-24T15:02:08 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLoginBtn -->
+        <test-method signature="closeTheBrowser()[pri:0, instance:org.testngbasics.TestNg01FbPriotParam@15043a2f]" started-at="2024-03-24T15:02:08 IST" name="closeTheBrowser" finished-at="2024-03-24T15:02:16 IST" duration-ms="7406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- org.testngbasics.TestNg01FbPriotParam -->
+      <class name="org.testngbasics.TestNg02InstaSuite">
+        <test-method signature="launchingBrowser()[pri:1, instance:org.testngbasics.TestNg02InstaSuite@2cb4893b]" started-at="2024-03-24T15:01:58 IST" name="launchingBrowser" finished-at="2024-03-24T15:02:08 IST" duration-ms="10556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="enterUser(java.lang.String,java.lang.String)[pri:2, instance:org.testngbasics.TestNg02InstaSuite@2cb4893b]" started-at="2024-03-24T15:02:08 IST" name="enterUser" data-provider="TestData" finished-at="2024-03-24T15:02:15 IST" duration-ms="6114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asakbarshas12344@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12dfsa34]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[java.lang.NumberFormatException: For input string: "public"]]>
+              <![CDATA[Unable to locate element: //input[@name='username']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, findElement {using=xpath, value=//input[@name='username']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: "public"
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
-at org.frameworkbaseclass.BaseClassForMethodCreation.chromeBrowser(BaseClassForMethodCreation.java:58)
-at org.testngbasics.TestNg05CrossParallel.browserLaunch(TestNg05CrossParallel.java:20)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@name='username']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, findElement {using=xpath, value=//input[@name='username']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.testngbasics.TestNg02InstaSuite.enterUser(TestNg02InstaSuite.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -43,62 +109,243 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.NumberFormatException: For input string: "public"
-at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-at java.base/java.lang.Integer.parseInt(Integer.java:668)
-at java.base/java.lang.Integer.parseInt(Integer.java:786)
-at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
-at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
-... 30 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserLaunch -->
-      </class> <!-- org.testngbasics.TestNg05CrossParallel -->
-    </test> <!-- Ch Test -->
-    <test started-at="2024-03-24T14:32:02 IST" name="Ed Test" finished-at="2024-03-24T14:32:12 IST" duration-ms="10211">
-      <class name="org.testngbasics.TestNg05CrossParallel">
-        <test-method signature="browserLaunch(java.lang.String)[pri:0, instance:org.testngbasics.TestNg05CrossParallel@76b1e9b8]" started-at="2024-03-24T14:32:02 IST" name="browserLaunch" finished-at="2024-03-24T14:32:12 IST" duration-ms="10138" status="PASS">
+        </test-method> <!-- enterUser -->
+        <test-method signature="enterUser(java.lang.String,java.lang.String)[pri:2, instance:org.testngbasics.TestNg02InstaSuite@2cb4893b]" started-at="2024-03-24T15:02:15 IST" name="enterUser" data-provider="TestData" finished-at="2024-03-24T15:02:16 IST" duration-ms="1258" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[arun1234@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sziue7645]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Expected exception of type class org.openqa.selenium.NoSuchElementException but got org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, setTimeout {implicit=5000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Expected exception of type class org.openqa.selenium.NoSuchElementException but got org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, setTimeout {implicit=5000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed
+at org.testng.internal.invokers.ExpectedExceptionsHolder.wrongException(ExpectedExceptionsHolder.java:67)
+at org.testng.internal.invokers.TestInvoker.considerExceptions(TestInvoker.java:853)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:718)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, setTimeout {implicit=5000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:938)
+at org.testngbasics.TestNg02InstaSuite.enterUser(TestNg02InstaSuite.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+... 12 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserLaunch -->
-      </class> <!-- org.testngbasics.TestNg05CrossParallel -->
-    </test> <!-- Ed Test -->
-    <test started-at="2024-03-24T14:32:02 IST" name="Fi Test" finished-at="2024-03-24T14:32:15 IST" duration-ms="12768">
-      <class name="org.testngbasics.TestNg05CrossParallel">
-        <test-method signature="browserLaunch(java.lang.String)[pri:0, instance:org.testngbasics.TestNg05CrossParallel@1033576a]" started-at="2024-03-24T14:32:02 IST" name="browserLaunch" finished-at="2024-03-24T14:32:15 IST" duration-ms="12687" status="PASS">
+        </test-method> <!-- enterUser -->
+        <test-method signature="enterUser(java.lang.String,java.lang.String)[pri:2, instance:org.testngbasics.TestNg02InstaSuite@2cb4893b]" started-at="2024-03-24T15:02:16 IST" name="enterUser" data-provider="TestData" finished-at="2024-03-24T15:02:16 IST" duration-ms="16" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[balaji2764657@gmail.com ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[876d]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Expected exception of type class org.openqa.selenium.NoSuchElementException but got org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, setTimeout {implicit=5000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Expected exception of type class org.openqa.selenium.NoSuchElementException but got org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, setTimeout {implicit=5000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed
+at org.testng.internal.invokers.ExpectedExceptionsHolder.wrongException(ExpectedExceptionsHolder.java:67)
+at org.testng.internal.invokers.TestInvoker.considerExceptions(TestInvoker.java:853)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:718)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, setTimeout {implicit=5000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:938)
+at org.testngbasics.TestNg02InstaSuite.enterUser(TestNg02InstaSuite.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+... 12 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserLaunch -->
-      </class> <!-- org.testngbasics.TestNg05CrossParallel -->
-    </test> <!-- Fi Test -->
+        </test-method> <!-- enterUser -->
+        <test-method signature="closeeBrowser()[pri:5, instance:org.testngbasics.TestNg02InstaSuite@2cb4893b]" started-at="2024-03-24T15:02:16 IST" name="closeeBrowser" finished-at="2024-03-24T15:02:16 IST" duration-ms="9" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6da075f9-c460-429a-8a8b-6abef17cd3ed, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:22944, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23328, moz:profile: C:\Users\UsEr\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:22944/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6da075f9-c460-429a-8a8b-6abef17cd3ed
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:410)
+at org.frameworkbaseclass.BaseClassForMethodCreation.closeBrowser(BaseClassForMethodCreation.java:90)
+at org.testngbasics.TestNg02InstaSuite.closeeBrowser(TestNg02InstaSuite.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeeBrowser -->
+      </class> <!-- org.testngbasics.TestNg02InstaSuite -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
