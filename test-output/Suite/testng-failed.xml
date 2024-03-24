@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="password" value="12345asdfg"/>
-    <parameter name="username" value="asakbarsha75657@gmail.com"/>
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Ch Test(failed)">
+    <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="org.testngbasics.TestNg01FbPriotParam">
+      <class name="org.testngbasics.TestNg05CrossParallel">
         <methods>
-          <include name="getTit"/>
+          <include name="browserLaunch" invocation-numbers="0"/>
         </methods>
-      </class> <!-- org.testngbasics.TestNg01FbPriotParam -->
+      </class> <!-- org.testngbasics.TestNg05CrossParallel -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Ch Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
