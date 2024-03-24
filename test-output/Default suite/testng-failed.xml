@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.testngbasics.TestNg04Assert">
+      <class name="org.testngbasics.DemoRunParallel">
         <methods>
-          <include name="getTit"/>
+          <include name="ie"/>
         </methods>
-      </class> <!-- org.testngbasics.TestNg04Assert -->
+      </class> <!-- org.testngbasics.DemoRunParallel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

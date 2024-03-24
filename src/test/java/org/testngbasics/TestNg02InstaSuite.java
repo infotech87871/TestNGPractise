@@ -1,5 +1,7 @@
 package org.testngbasics;
 
+import java.time.Duration;
+
 import org.frameworkbaseclass.BaseClassForMethodCreation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -24,9 +26,10 @@ public class TestNg02InstaSuite extends BaseClassForMethodCreation {
 		launchUrl("https://www.instagram.com/");
 	}
 
-	// @Parameters({"username"})
+	@Parameters({"username"})
 	@Test(priority = 2, dataProvider = "TestData")
 	public static void enterUser(String email1, String pass1) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		WebElement email = driver.findElement(By.xpath("//input[@name='username']"));
 		sendKeys(email, email1);
 		WebElement pass = driver.findElement(By.cssSelector("input[type='password']"));

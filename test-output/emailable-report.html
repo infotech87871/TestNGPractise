@@ -8,15 +8,42 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,727</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Ch Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,509</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Ed Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,211</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Fi Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,768</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">26,488</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">org.testngbasics.TestNg04Assert</td><td><a href="#m0">clickLoginBtn</a></td><td rowspan="1">1711177784132</td><td rowspan="1">376</td></tr><tr class="passedeven"><td><a href="#m1">closeTheBrowser</a></td><td rowspan="1">1711177784520</td><td rowspan="1">359</td></tr><tr class="passedeven"><td><a href="#m2">enterUsername</a></td><td rowspan="1">1711177783727</td><td rowspan="1">315</td></tr><tr class="passedeven"><td><a href="#m3">getTit</a></td><td rowspan="1">1711177784049</td><td rowspan="1">71</td></tr><tr class="passedeven"><td><a href="#m4">lauchingBrowser</a></td><td rowspan="1">1711177775223</td><td rowspan="1">8473</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Ch Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.testngbasics.TestNg05CrossParallel</td><td><a href="#m0">browserLaunch</a></td><td rowspan="1">1711270922464</td><td rowspan="1">3421</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Ed Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.testngbasics.TestNg05CrossParallel</td><td><a href="#m1">browserLaunch</a></td><td rowspan="1">1711270922463</td><td rowspan="1">10138</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Fi Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.testngbasics.TestNg05CrossParallel</td><td><a href="#m2">browserLaunch</a></td><td rowspan="1">1711270922463</td><td rowspan="1">12687</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">org.testngbasics.TestNg04Assert#clickLoginBtn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">org.testngbasics.TestNg04Assert#closeTheBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">org.testngbasics.TestNg04Assert#enterUsername</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>asasakbarsha7676@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">org.testngbasics.TestNg04Assert#getTit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">org.testngbasics.TestNg04Assert#lauchingBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Ch Test</h2><h3 id="m0">org.testngbasics.TestNg05CrossParallel#browserLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1445)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1205)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at org.frameworkbaseclass.BaseClassForMethodCreation.chromeBrowser(BaseClassForMethodCreation.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.NumberFormatException: For input string: &quot;public&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:178)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.buildUrl(ChromeDriverManager.java:155)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1282)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1199)
+	... 30 more
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Ed Test</h2><h3 id="m1">org.testngbasics.TestNg05CrossParallel#browserLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Fi Test</h2><h3 id="m2">org.testngbasics.TestNg05CrossParallel#browserLaunch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

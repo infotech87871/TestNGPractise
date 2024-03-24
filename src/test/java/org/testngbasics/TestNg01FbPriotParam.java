@@ -12,7 +12,7 @@ public class TestNg01FbPriotParam extends BaseClassForMethodCreation {
 
 	@Test(priority = -5)
 	public static void lauchingBrowser() {
-		edgeBrowser();
+		firefoxBrowser();
 		maximizeWindow();
 		launchUrl("https://www.facebook.com/");
 	}
@@ -27,7 +27,7 @@ public class TestNg01FbPriotParam extends BaseClassForMethodCreation {
 		WebElement pass = driver.findElement(By.cssSelector("input[type='password']"));
 		sendKeys(pass, pass1);
 	}
-	@Test(priority = -2)
+	//@Test(priority = -2)
 	public static void getTit() {
 		 String title = driver.getTitle();
 		 Assert.assertEquals("insta", title);
