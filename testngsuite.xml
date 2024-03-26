@@ -5,7 +5,7 @@
 	  
 	  <parameter name="username" value="asakbarsha75657@gmail.com"></parameter>	 
 	  <parameter name="password" value="12345asdfg"></parameter>    
-	  
+	   
     <classes>
       <class name="org.testngbasics.TestNg01FbPriotParam"/>
       <class name="org.testngbasics.TestNg02InstaSuite"/>
