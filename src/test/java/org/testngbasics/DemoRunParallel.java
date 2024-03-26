@@ -18,10 +18,11 @@ public class DemoRunParallel {
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 	}
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	private void chrome() {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 	}
 	@Test(priority = 3)
